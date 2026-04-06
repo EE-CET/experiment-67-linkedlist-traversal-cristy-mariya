@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Test 1",
+      "setup": "javac src/Solution.java",
+      "run": "java -cp src Solution",
+      "input": "3\r\n10 20 30",
+      "output": "Forward: 10 20 30\r\nBackward: 30 20 10",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    },
+    {
+      "name": "Test 2",
+      "setup": "javac src/Solution.java",
+      "run": "java -cp src Solution",
+      "input": "5\r\n1 2 3 4 5",
+      "output": "Forward: 1 2 3 4 5\r\nBackward: 5 4 3 2 1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    }
+  ]
+}

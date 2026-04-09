@@ -1,13 +1,11 @@
 import java.util.*;
 
-public class Solution{
+public class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         int n = sc.nextInt();
-        LinkedList<Integer> list = new LinkedList<>();
 
-        // Read elements
+        LinkedList<Integer> list = new LinkedList<>();
         for (int i = 0; i < n; i++) {
             list.add(sc.nextInt());
         }
@@ -17,15 +15,23 @@ public class Solution{
         // Forward traversal
         System.out.print("Forward: ");
         while (it.hasNext()) {
-            System.out.print(it.next() + " ");
+            int val = it.next();
+            System.out.print(val);
+            if (it.hasNext()) {
+                System.out.print(" ");
+            }
         }
+
+        System.out.println();
 
         // Backward traversal
-        System.out.print("\nBackward: ");
+        System.out.print("Backward: ");
         while (it.hasPrevious()) {
-            System.out.print(it.previous() + " ");
+            int val = it.previous();
+            System.out.print(val);
+            if (it.hasPrevious()) {
+                System.out.print(" ");
+            }
         }
-
-        sc.close();
     }
 }
